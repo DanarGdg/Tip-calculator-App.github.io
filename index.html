@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App | Frontendmentor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+
+            <div class="container">
+                <div class="section-1">
+                    <div class="bill">
+                        <h3>Bill</h3>
+                        <input id="bill" placeholder="0" type="number" name="bill">
+                    </div>
+    
+                    <div class="select-tip">
+                        <h3>Select Tip %</h3>
+                        <div class="tip-row">
+                            <button value="5" class="btn-tip">5%</button>
+                            <button value="10" class="btn-tip">10%</button>
+                            <button value="15" class="btn-tip">15%</button>
+                            <button value="25" class="btn-tip">25%</button>
+                            <button value="50" class="btn-tip">50%</button> 
+                            <input class="radio" id="custom" type="number" name="custom tip" placeholder="Custom">
+                        </div>
+                    </div>
+    
+                    <div class="num-of-people">
+                        <h3>Number of People</h3>
+                        <input id="numOfPeople" required placeholder="0" type="number" name="amount people">
+                    </div>
+                </div>
+
+                <div class="section-2">
+                    <div class="billing-section">
+                        <div class="left-section">
+                            <h3>Tip Amount</h3>
+                            <p>/ person</p>
+                        </div>
+                        <div class="right-section">
+                            <h1 id="tipAmount">$0.00</h1>
+                        </div>
+                    </div>
+
+                    <div class="billing-section">
+                        <div class="left-section">
+                            <h3>Total</h3>
+                            <p>/ person</p>
+                        </div>
+                        <div class="right-section">
+                            <h1 id='total'>$0.00</h1>
+                        </div>
+                    </div>
+
+                    <button id="resetButton">RESET</button>
+                </div>
+            </div>
+            <p class="copyright">	&copy; Copyright Danar Gading</p>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
